@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> <!--Se enlaza en css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Young+Serif&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="icon" type="image/x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStyM1OroMoG1_f4O4BzEwIoSAxHePso5DY20BkWRpBhExAadr4wr1nr8ceYVf7UoFP7t4&usqp=CAU">
+    <title>CNCO Fan Page</title>
+
+</head>
+
+<body>
+    <main>
+
+        <nav>
+            <a href="#historia">Hisoria de CNCO</a>
+            <a href="#programas">Programas en los que han participado</a>
+            <a href="#discografia">Discografia</a>
+            <a href="#canciones">Mis canciones favoritas</a>
+            <a href="#formulario">Suscribete a mi pagina</a>
+        </nav>
+
+
+
+        <h1>CNCO</h1>
+       
+
+
+        <section id="testimonios" class="testimonios seccion-clara">
+            <!-- Carrusel -->
+            <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img class="testimonio-imagen  rounded-circle"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfkAidOqktRI_6YSTxSh6_HcT2tjcjqVjM5g&usqp=CAU"
+                                alt="Foto de Eric">
+                                <div class="testimonio-info">
+                                    <p class="cliente">Eric Brian Colon</p>
+                                </div>
+                            <p class="testimonio-texto">Erick Brian Colon nació en La Habana, Cuba el 3 de enero de 2001. Una quinta parte de la banda de chicos CNCO que fue seleccionado como el cuarto miembro del grupo después de competir en el programa de telerrealidad La Banda. Él y Zabdiel de Jesús fueron los últimos dos miembros seleccionados para formar parte de la banda de chicos CNCO. Actuó con sus compañeros de banda CNCO, Christopher Vélez y Joel Pimentel, como parte de una banda competidora en la semana 1 de La Banda. </p>
+                            
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img class="testimonio-imagen rounded-circle"
+                                src=" data:image/jpeg;base64,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"
+                                alt="Foto de Cris">
+                                <div class="testimonio-info">
+                                    <p class="cliente">Christopher Velez </p>
+                                </div>
+                            <p class="testimonio-texto">Christopher Bryant Vélez Muñoz nació el 23 de noviembre de 1995 , Durante ese tiempo audicionó para el programa La Banda siendo seleccionado como participante del reality. Al momento de escoger a los 5 ganadores que formarían parte de CNCO, Christopher fue el primer seleccionado gracias a la mayor votación por parte del público. Así, el 13 de diciembre de 2015, se creó la exitosa banda latina a la que pertenece, junto a Richard Camacho, Erick Brian Colón y Zabdiel de Jesús.</p>
+                           
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img class="testimonio-imagen rounded-circle"
+                                src="data:image/jpeg;base64,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"
+                                alt="Foto de richar">
+                                <div class="testimonio-info">
+                                    <p class="cliente">Richard Camacho</p>
+                                </div>
+                            <p class="testimonio-texto">Richard Yashel Camacho Puello nació el 22 de enero de 1997Junto a su hermano Yashua participaron en el reality show La Banda de Univision. Ambos actuaron con el tema «Entra en mi vida» de Sin Bandera; aunque los evaluaron individualmente, ambos pasaron a la siguiente etapa de la competencia. Durante la segunda etapa, Yashua (su hermano menor) fue eliminado, por lo que Richard tuvo que continuar solo..</p>
+                        
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img class="testimonio-imagen rounded-circle"
+                                src="data:image/jpeg;base64,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"
+                                alt="Foto de  Zab">
+                                <div class="testimonio-info">
+                                    <p class="cliente">Zabdiel de Jesús</p>
+                                </div>
+                            <p class="testimonio-texto">Zabdiel de Jesús Colón nació el 13 de diciembre de 1997 Desde muy temprana edad desarrolló su interés por el canto. Durante su adolescencia fue parte de un grupo de salsa y hip hop de su iglesia, además de aprender ballet, en una academia de Puerto Rico.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+
+        <section class="tarjeta" id="programas">
+        <h3 id="titulo-historia">Historia de CNCO</h3>
+        <p id="texto1"> CNCO fue un grupo musical de reguetón y pop latino formado en Miami, Florida,
+            Estados Unidos el 13 de diciembre de 2015. Está integrado por Christopher Vélez (de Ecuador),
+            Richard Camacho (de la República Dominicana), Zabdiel de Jesús (de Puerto Rico) y Erick Brian Colón Arista
+            (de Cuba) .
+            Surgieron del programa de Telerrealidad estadounidense La banda.
+            <br>Luego de su formación, firmaron un contrato de cinco años con Sony Music Latin. El reggaetonero
+            puertorriqueño Wisin fue el productor de su primer disco llamado Primera cita. Ricky Martin es su
+            representante artístico.
+        </p>
+    </section>
+
+
+        <section class="tarjeta" id="programas">
+            <h3 id="titulo-programa">Programas en los que han participado</h3>
+            <!--Es para hacer listas desordenadas <ul> -->
+            <ul>
+                <li>4EVER</li>
+                <li>La banda</li>
+            </ul>
+        </section>
+        <section class="tarjeta" id="discografia">
+            <h3 id="titulo-discografia"> Discografia</h3>
+            <!--Es para hacer listas ordenadas <ol> -->
+            <ol>
+                <li>Primera cita</li>
+                <li>CNCO</li>
+                <li>Deja vu</li>
+                <li>Que quienes somos</li>
+                <li>XOXO</li>
+            </ol>
+        </section>
+
+        <section class="tarjeta" id="canciones">
+            <h3 id="titulo-canciones"> Mis canciones favoritas</h3>
+            <img id="imagen2"
+                src="https://cdn.smehost.net/sonymusiclatincom-uslatinprod/wp-content/uploads/2022/01/CNCO-PARTY-HUMO-5X5-400x400.jpg"
+                alt="canciones">
+            <ul>
+                <li> <a href="https://www.youtube.com/watch?v=PIbwtUSXARs" target="_blank">Primera cita</a> </li>
+                <li> <a href="https://www.youtube.com/watch?v=AZHXsYlZLIs" target="_blank">Tan enamorados</a> </li>
+                <li> <a href="https://www.youtube.com/watch?v=iDkz-xDUQAs" target="_blank">Para enamorarte</a> </li>
+                <li><a href="https://www.youtube.com/watch?v=7jpqqBX-Myw" target="_blank">Reggaeton Lento</a></li>
+                <li><a href="https://www.youtube.com/watch?v=t24SOrpvMiU" target="_blank">Noche inolvidable</a></li>
+                <li><a href="https://www.youtube.com/watch?v=bl74-JGdpfA" target="_blank">La ultima canción</a></li>
+            </ul>
+        </section>
+
+        <section class="tarjeta" id="formulario">
+            <h3 id="titulo-formulario">Suscribete a mi pagina</h3>
+            <form action="">
+                <input type="text" placeholder="Nombre">
+                <br>
+                <p>¿De donde eres?</p>
+                <input type="radio" name="opciones" value="opcion1"><label form="opcion1">Mexico </label>
+                <input type="radio" name="opciones" value="opcion2"><label for="opcion2">Colombia</label>
+                <input type="radio" name="opciones" value="opcion3"><label form="opcion3">Venezuela</label>
+                <input type="radio" name="opciones" value="opcion4"><label form="opcion4"> Argentina</label>
+                <br>
+
+                <p>Que tipo de noticias quieres recibir</p>
+                <input type="checkbox">Canciones
+                <input type="checkbox">Giras musicales
+                <input type="checkbox">Chismes
+                <input type="checkbox"> Nominaciones
+                <br>
+
+                <button>Enviar</button>
+            </form>
+        </section>
+
+    </main>
+</body>
+
+</html>
